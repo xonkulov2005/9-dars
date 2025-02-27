@@ -7,15 +7,35 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header id="header">
+    <header class="header">
       <div class="site-nav">
-        <img src="" alt="" />
-        <ul>
-          <li>
-            <a href="#">Parfyumeriya</a>
-            <a href="#">Uy jihozlari</a>
-            <a href="#">Oziq-ovqatlar</a>
-            <a href="#">Mevalar</a>
+        <img
+          class="logo-img"
+          src="./images/Online Store.jpg"
+          alt="Xonqulov's Logo"
+          width="125"
+          height="105"
+        />
+        <div class="input-wrapper">
+          <input
+            class="input"
+            type="text"
+            placeholder="Mahsulot nomini kiriting..."
+          />
+          <img
+            class="input-ico"
+            src="data:image/png;base64,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"
+            alt="search icon"
+            width="25"
+            height="25"
+          />
+        </div>
+        <ul class="site-nav-item">
+          <li class="site-nav-list">
+            <a class="site-nav-link" href="#">Parfyumeriya</a>
+            <a class="site-nav-link" href="#">Uy jihozlari</a>
+            <a class="site-nav-link" href="#">Oziq-ovqatlar</a>
+            <a class="site-nav-link" href="#">Mevalar</a>
           </li>
         </ul>
       </div>
