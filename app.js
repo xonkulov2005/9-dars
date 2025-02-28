@@ -12,6 +12,8 @@ fetch(`https://dummyjson.com/products`)
                 <img src="${product.thumbnail}" alt="${product.title}" class="product-image">
                 <h2>${product.title}</h2>
                 <p>${product.description}</p>
+                <h4 class="product-rating">raiting: ${product.rating} </h4>
+                <h4 class="product-stock">stock: ${product.stock} </h4>
                 <p class="price"><strong>Narx:</strong> $${product.price}</p>
             `;
 
