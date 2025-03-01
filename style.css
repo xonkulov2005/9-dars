@@ -104,3 +104,28 @@ p {
 .product-rating::before {
   content: url(./images/star.png);
 }
+
+@media screen and (max-width: 950px) {
+  .site-nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .input-wrapper {
+    padding: 10px 10px;
+  }
+  .input {
+    width: auto;
+    max-width: 130px;
+  }
+  .input-ico {
+    max-width: 18px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav-item {
+    display: none;
+  }
+}
